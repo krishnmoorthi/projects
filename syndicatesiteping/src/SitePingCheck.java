@@ -12,8 +12,8 @@ public class SitePingCheck {
         //System.setProperty("webdriver.chrome.driver","G:\\chromedriver.exe");
         //WebDriver driver = new ChromeDriver();
 
-        String baseUrl = "http://personalizedjewelry.jcpenney.com/";
-        String expectedTitle = "JCPenney Personalized Jewelry";
+        String baseUrl = "http://https://www.google.com/";
+        String expectedTitle = "Google Search";
         String actualTitle = "";
 
         // launch Fire fox and direct it to the Base URL
@@ -26,7 +26,7 @@ public class SitePingCheck {
          * compare the actual title of the page with the expected one and print
          * the result as "Passed" or "Failed"
          */
-        if (actualTitle.contentEquals(expectedTitle)) {
+        if (actualTitle.contains(expectedTitle)) {
             System.out.println("Test Passed!");
         } else {
             System.out.println("Test Failed");
