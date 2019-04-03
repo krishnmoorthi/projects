@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>MyFarm</title>
+<meta http-equiv="refresh" content="10">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+	rel="stylesheet">
+</head>
+<body>
+	<div class="row">
+		<div class="col-sm-4">
+			<div id="farmstatus">
+				<table class="table table-bordered table-condensed">
+					<caption>Farm Status</caption>
+					<thead class="thead-dark">
+						<tr>
+							<th scope="col">Birds</th>
+							<th scope="col">Available</th>
+							<th scope="col">Total Available Eggs</th>
+						<tr>
+					</thead>
+					<tbody>
+						<tr th:each="bird : ${birdsList}">
+							<td th:text="${bird.type}">type</td>
+							<td th:text="${bird.total}">total</td>
+							<td th:text="${bird.eggsAvailable}">eggsAvailable</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div id="foodstatus">
+				<table class="table table-bordered table-condensed">
+					<caption>Food Status</caption>
+					<thead class="thead-dark">
+						<tr>
+							<th scope="col">Food</th>
+							<th scope="col">Available Qty in (gram)</th>
+						<tr>
+					</thead>
+					<tbody>
+						<tr th:each="food : ${foodList}">
+							<td th:text="${food.foodType}">foodType</td>
+							<td th:text="${food.availableQty}">availableQty</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div id="Water">
+				<table class="table table-bordered table-condensed">
+					<caption>Water Status</caption>
+					<thead class="thead-dark">
+						<tr>
+							<th scope="col">Tank</th>
+						<tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td th:text="${water.availalbeQty}">availalbeQty</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+			<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		</div>
+	</div>
+</body>
+</html>
