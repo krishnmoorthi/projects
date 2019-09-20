@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kittyprojects.jimmyexpanalyser.utils.PropertiesUtilTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-19T17:35:37" hostname="localhost-krishna" time="0.048">
+  <properties/>
+  <testcase name="testLoadproperties" classname="com.kittyprojects.jimmyexpanalyser.utils.PropertiesUtilTest" time="0.048"/>
+  <system-out><![CDATA[null
+null
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
