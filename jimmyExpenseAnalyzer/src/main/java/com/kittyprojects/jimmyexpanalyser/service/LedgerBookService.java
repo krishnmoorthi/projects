@@ -3,11 +3,10 @@
  */
 package com.kittyprojects.jimmyexpanalyser.service;
 
-import java.util.List;
 import java.util.Map;
 
 import com.kittyprojects.jimmyexpanalyser.helper.LedgerBookHelper;
-import com.kittyprojects.jimmyexpanalyser.model.LedgerBook;
+import com.kittyprojects.jimmyexpanalyser.model.LedgerBooks;
 
 /**
  * @author krishnamoorthi
@@ -22,7 +21,7 @@ public class LedgerBookService {
 	}
 	
 
-	public List<LedgerBook> getAllLedgerBooks(){
+	public LedgerBooks getLedgerBooks(){
 		return ledgerBookHelper.getLedgerBooks();
 	}
 	

@@ -13,7 +13,7 @@ public class LedgerBook {
 
 	public long id;
 	public String name;
-	public List<Ledger> Ledgers;
+	public List<LedgerMonthWise> LedgerMonthWise;
 
 	/**
 	 * @return the id
@@ -43,28 +43,13 @@ public class LedgerBook {
 		this.name = name;
 	}
 
-	/**
-	 * @return the ledgers
-	 */
-	public List<Ledger> getLedgers() {
-		return Ledgers;
+	public List<LedgerMonthWise> getLedgerMonthWise() {
+		return LedgerMonthWise;
 	}
 
-	/**
-	 * @param ledgers the ledgers to set
-	 */
-	public void setLedgers(List<Ledger> ledgers) {
-		Ledgers = ledgers;
+	public void setLedgerMonthWise(List<LedgerMonthWise> ledgerMonthWise) {
+		LedgerMonthWise = ledgerMonthWise;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.lang.Object#toString()
-	 */
-	@Override
-	public String toString() {
-		return "LedgerBook [id=" + id + ", name=" + name + ", Ledgers=" + Ledgers + "]";
-	}
 
 }
